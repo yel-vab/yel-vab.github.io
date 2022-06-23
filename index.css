@@ -1,0 +1,377 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-black: #303030;
+  --color-white: #f6f6f6;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container__main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header and Navigation Styles */
+
+.header {
+  background-color: var(--color-white);
+  width: 13rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.header__menu {
+  padding: 3rem 0;
+  border-right: 1px solid rgb(187, 187, 187);
+  width: 100%;
+  text-transform: uppercase;
+  padding-right: 2rem;
+}
+
+.menu__list {
+  text-align: right;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.menu__item {
+  padding: 0.8rem 0;
+}
+
+.menu__item:hover {
+  font-weight: 400;
+}
+
+/* Sections Styles */
+
+.section {
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-left: 15rem;
+}
+
+.section--first {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(0deg, var(--color-white), rgba(255, 255, 255, 0));
+}
+
+.section--first::after {
+  display: block;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  content: 'hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag! hello! hola! bonjour! guten tag! salve! nǐn hǎo! olá! asalaam alaikum! konnichiwa! anyoung haseyo! zdravstvuyte! anyoung haseyo! goddag! shikamoo! goedendag! yassas! dzień dobry! selamat siang! namaste! merhaba! shalom! god dag!';
+  opacity: 0.1;
+}
+
+.wrapper__intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  color: #8f8f8f;
+  font-family: 'Open Sans';
+  overflow: hidden;
+}
+
+.intro__text {
+  margin: 0.25rem 3rem;
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.intro__name {
+  font-weight: 600;
+  color: #565656;
+}
+
+.animated__intro {
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.animated__intro::after {
+  content: '';
+  animation: animate infinite 5s;
+}
+
+@keyframes animate {
+  0% {
+    content: 'building';
+  }
+  20% {
+    content: 'creating';
+  }
+  40% {
+    content: 'solving problems';
+  }
+  60% {
+    content: 'crafting';
+  }
+  80% {
+    content: 'making cool stuff';
+  }
+  100% {
+    content: 'building';
+  }
+}
+
+.wrapper__title {
+}
+
+.wrapper-about {
+  display: flex;
+  width: 100%;
+}
+
+.section__title {
+  font-family: 'Georgia';
+  font-style: italic;
+  font-weight: 100;
+  font-size: 3.5rem;
+  color: #616161;
+  margin: 0;
+  margin-bottom: 5rem;
+}
+
+.wrapper__image {
+  width: 35%;
+  padding: 0 4rem;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.wrapper__text {
+  width: 65%;
+  font-size: 1.6rem;
+  padding: 0 15rem 0 1rem;
+  text-align: justify;
+}
+
+.about__paragraph {
+}
+
+.about__paragraph--first {
+  margin: 0;
+}
+
+.wrapper-icons {
+  display: flex;
+  font-size: 6rem;
+}
+
+.icon-wrapper {
+  margin: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.devicon::after {
+  display: block;
+  position: absolute;
+  top: -2rem;
+  color: #f6f6f6;
+  font-size: 1rem;
+  font-family: 'Open Sans';
+  content: attr(text);
+  text-align: center;
+  background-color: #181818a3;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  visibility: hidden;
+}
+
+.icon-wrapper:hover .devicon::after {
+  visibility: visible;
+}
+
+.section--gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper__gallery {
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.gallery__tile {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 2.5rem;
+  position: relative;
+  display: flex;
+}
+
+.project__thumbnail {
+  width: 100%;
+  object-fit: cover;
+}
+
+.wrapper__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__tile:hover .wrapper__info {
+  height: 100%;
+}
+
+.wrapper__text {
+  width: 100%;
+}
+
+.project__name,
+.project__description,
+.project__tech {
+  color: #181818;
+  display: block;
+  line-height: 1;
+  margin: 0.5rem;
+  text-shadow: 0.1rem 0.1rem rgba(255, 255, 255, 0.7);
+}
+
+.project__name {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.project__name::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  color: #303030;
+}
+
+.project__description {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.project__tech {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.section--last {
+  min-height: 100vh;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.wrapper__text--last {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  flex-grow: 1;
+  line-height: 2;
+}
+
+.contact__list {
+  align-self: center;
+  width: fit-content;
+}
+
+.contact__link {
+  width: min-content;
+}
+
+.contact__item {
+  border-bottom: 1px solid rgb(112, 112, 112, 0);
+}
+
+.contact__item:hover {
+  border-bottom: 1px solid #707070;
+}
+
+.contact__paragraph {
+  margin: 1rem;
+}
+
+.contact__paragraph--inner {
+  margin: .5rem 0;
+}
+
+.contact__email {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  color: #00a6d3;
+}
+
+.contact__email:hover {
+  border-bottom: 1px solid #00a6d3;
+}
+
+.footer {
+  color: rgba(112, 112, 112, 0.48);
+  padding: 2rem;
+  text-align: center;
+  text-transform: lowercase;
+}
