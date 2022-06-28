@@ -38,9 +38,7 @@
     </section>
     <!-- About Page -->
     <section class="section" id="about">
-      <div class="wrapper__title">
         <h1 class="section__title">… a few more things about me ...</h1>
-      </div>
       <div class="wrapper-about">
         <div class="wrapper__image">
           <img
@@ -94,42 +92,48 @@
     </section>
     <!-- Work Page -->
     <section class="section section--gallery" id="work">
-      <div class="wrapper__title">
         <h1 class="section__title">
           … and here are a couple of stuff I've worked on ...
-        </h1>
-      </div>
-
-      <div class="wrapper__gallery">
-        <div class="gallery__tile">
+        </h1>        
+        <div class="wrapper__gallery">
+          <div class="gallery__tile">
           <img
+            id="myImg"  
             class="project__thumbnail"
             src="./assets/thumbnails/project-1.png"
-            alt=""
+            alt="Who Wants to Be A Millionaire? A WWTBAM browser game built using JavaScript"
           />
           <div class="wrapper__info">
             <p class="project__name">Who Wants to Be A Millionaire?</p>
             <p class="project__description">A WWTBAM browser game</p>
             <p class="project__tech">JavaScript</p>
+            <div class="project__buttons__wrapper">
+              <div id="button-1" class="disabled project__button">Live Demo *Soon*</div>
+              <a href="https://github.com/yel-vab/WWTBAM-browser-game" target="_blank"><div id="button-1" class="project__button">View Code</div></a>
+            </div>
           </div>
         </div>
         <div class="gallery__tile">
           <img
             class="project__thumbnail"
             src="./assets/thumbnails/project-2.png"
-            alt=""
+            alt="Task Master. A to-do list app built using React."
           />
           <div class="wrapper__info">
             <p class="project__name">Task Master</p>
             <p class="project__description">A to-do list app</p>
             <p class="project__tech">React</p>
+            <div class="project__buttons__wrapper">
+              <div id="button-1" class="disabled project__button">Live Demo *Soon*</div>
+              <a href="https://github.com/yel-vab/task-master" target="_blank"><div id="button-1" class="project__button">View Code</div></a>
+            </div>
           </div>
         </div>
         <div class="gallery__tile">
           <img
             class="project__thumbnail"
             src="./assets/thumbnails/project-3.png"
-            alt=""
+            alt="WeatherWatcher. A weather forecast app built using React and FreeWeatherAPI."
           />
           <div class="wrapper__info">
             <p class="project__name">WeatherWatcher</p>
@@ -137,13 +141,17 @@
               A weather forecast app using FreeWeatherAPI
             </p>
             <p class="project__tech">React</p>
+            <div class="project__buttons__wrapper">
+              <div id="button-1" class="disabled project__button">Live Demo *Soon*</div>
+              <div id="button-1" class="disabled project__button">View Code *Soon*</div>
+            </div>
           </div>
         </div>
         <div class="gallery__tile">
           <img
             class="project__thumbnail"
             src="./assets/thumbnails/project-4.png"
-            alt=""
+            alt="An e-commerce site built using React, Tailwind CSS, and FakeStoreAPI."
           />
           <div class="wrapper__info">
             <p class="project__name">SulitSaver</p>
@@ -151,13 +159,17 @@
               An e-commerce site using FakeStoreAPI
             </p>
             <p class="project__tech">React + TailwindCSS</p>
+            <div class="project__buttons__wrapper">
+              <div id="button-1" class="disabled project__button">Live Demo *Soon*</div>
+              <a href="https://github.com/yel-vab/sulit-saver-site" target="_blank"><div id="button-1" class="project__button">View Code</div></a>
+            </div>
           </div>
         </div>
         <div class="gallery__tile">
           <img
             class="project__thumbnail"
             src="./assets/thumbnails/project-5.png"
-            alt=""
+            alt="Mento Mori. A letter archive app built using React, NodeJS, Express, and MongoDB."
           />
           <div class="wrapper__info">
             <p class="project__name">Mento Mori</p>
@@ -165,18 +177,26 @@
             <p class="project__tech"
               >React + NodeJS + ExpressJS + MongoDB</span
             >
+            <div class="project__buttons__wrapper">
+              <div id="button-1" class="disabled project__button">Live Demo *Soon*</div>
+              <a href="https://github.com/yel-vab/mento-mori-app" target="_blank"><div id="button-1" class="project__button">View Code</div></a>
+            </div>
           </div>
         </div>
         <div class="gallery__tile">
           <img
             class="project__thumbnail"
             src="./assets/thumbnails/project-6.png"
-            alt=""
+            alt="A chat app built using React and Firebase."
           />
           <div class="wrapper__info">
             <p class="project__name">Chapp</p>
             <p class="project__description">A chat app</p>
             <p class="project__tech">React + Firebase</p>
+            <div class="project__buttons__wrapper">
+              <div id="button-1" class="disabled project__button">Live Demo *Soon*</div>
+              <div id="button-1" class="disabled project__button">View Code *Soon*</div>
+            </div>
           </div>
         </div>
       </div>
